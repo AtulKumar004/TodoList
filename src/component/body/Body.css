@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+.main_sec {
+    width: 100vw;
+    height: calc(100% - 5rem);
+    background-color: #333333;
+    /* position: relative; */
+    display: flex;
+
+
+
+}
+
+.left_body {
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+
+}
+
+.form {
+    margin: 60px;
+    width: 80%;
+    background-color: #222;
+    padding: 30px;
+    height: 60%;
+    /* position: absolute; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* top: 30px;
+    left: 60px; */
+    border-radius: 10px;
+
+
+}
+
+.form_tag {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+
+}
+
+.form_tag input,
+select {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 10px;
+}
+
+label {
+    width: 60%;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.btn>* {
+    width: 70px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.add {
+    background-color: #ff9900;
+}
+
+.right_body {
+    width: 60%;
+    height: 100%;
+    /* background-color: bisque; */
+}
+
+.todoList {
+    width: 80%;
+    margin: 60px;
+    height: 60%;
+    padding: 10px;
+    background-color: #222;
+   
+    color: wheat;
+
+
+}
+
+
+
+.todoList>h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 25px;
+
+}
+
+.drink_name {
+    padding-left: 10px;
+
+}
+
+.drink_name>* {
+    margin-right: 1rem;
+    color: white;
+}
+.col{
+    display: flex;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #ff9900;
+}
+.name{
+           flex: 1 1;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center;
+            min-width: 45px;
+            padding: 0.5rem;
+}
+
+.rows{
+    width: 100%;
+    max-height: 30vh;
+    overflow: auto;
+  
+    
+}
+.row{
+    display: flex;
+    color: white;
+}
+.action > * {
+    background-color: #fff;
+        color: #212121;
+        padding: 0.5rem 1rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin: 0 4px;
+        border-radius: 2px;
+        font-weight: 500;
+        transition: all .1s ease-out;
+}
+
+button:hover{
+    opacity: .8;
+}
+
+
+
+@media (max-width: 768px) {
+    .main_sec {
+        /* position: relative; */
+        display: block;
+        height: 100%;
+    }
+
+    .left_body {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .right_body {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .form {
+        margin: 0px;
+        width: calc(100% );
+    }
+    .right_body{
+        width: 100%;
+        height: 50%;
+        padding: 5px;
+
+    }
+        .todoList {
+            width: 100%;
+            margin: 0px;
+            height: auto;
+        
+            background-color: #222;
+       
+            color: wheat;
+    
+    
+        }
+                .rows {
+                    width: 100%;
+                    height: auto;
+                   
+        
+        
+                }
+
+
+    
+
+}
